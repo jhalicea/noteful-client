@@ -1,0 +1,47 @@
+/* .folder-title {
+    color: #fff;
+    padding: 0 0 0 15px;
+}
+
+.name-input {
+    color: #fff;
+    padding: 0 0 0 15px;
+} */
+
+.folder-form-wrapper {
+    margin-left: 15px;
+    color: #bdbdbd;
+}
+
+label {
+    padding: 20px;
+}
+
+.button-add-new-folder {
+    margin: 30px
+}
+
+/* .button {
+    margin-left: 30px;
+    background-color: #cacaca;
+    border: 0;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    height: 60px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+} */
+
+/* .button:hover {
+        cursor: pointer;
+        background-color: #FFB72F;
+}
+
+.button:hover, .button:disabled {
+    color: -internal-light-dark(rgba(16, 16, 16, 0.3), white);
+    background-color: -internal-light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
+    border-color: -internal-light-dark(rgba(118, 118, 118, 0.3), rgba(195, 195, 195, 0.3));
+} */
+
