@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types"
 
 export default class LoadError extends React.Component {
   constructor(props) {
@@ -13,9 +14,18 @@ export default class LoadError extends React.Component {
   }
 
   render() {
+
     if (this.state.hasError) {
       return <h2>Could not display the information, there is an error while loading...</h2>;
     }
     return this.props.children;
   }
+}
+
+LoadError.defaultProps = {
+  props: {}
+}
+
+LoadError.propType = {
+  props: PropTypes.object.isRequired
 }

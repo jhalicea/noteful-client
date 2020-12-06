@@ -4,12 +4,14 @@ import { format } from 'date-fns'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ApiContext from '../ApiContext'
 import config from '../config'
+import PropTypes from "prop-types"
 import './Note.css'
 
 export default class Note extends React.Component {
   static defaultProps ={
     onDeleteNote: () => {},
   }
+
   static contextType = ApiContext;
 
   handleClickDelete = e => {
@@ -67,4 +69,12 @@ export default class Note extends React.Component {
       </div>
     )
   }
+}
+
+Note.defaultProps = {
+  props: {}
+}
+
+Note.propTypes = {
+  props: PropTypes.object.isRequired
 }

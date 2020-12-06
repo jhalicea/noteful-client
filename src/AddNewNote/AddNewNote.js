@@ -6,9 +6,11 @@ import "./AddNewNote.css";
 
 export default class AddNewNote extends React.Component {
   state = { error: null, name: { value: "", touched: false } };
+
   setName = (name) => {
     this.setState({ name: { value: name, touched: true } });
   };
+  
   static contextType = ApiContext;
 
   validateName = () => {
@@ -81,13 +83,13 @@ export default class AddNewNote extends React.Component {
 
           <div className='add-note-content inputs'>
             <label htmlFor="content">Content</label>
-            <textarea id="content" name="content" />
+            <textarea id="content" name="content" required />
           </div>
 
           <div className='add-note-folder inputs'>
             <label htmlFor="folder">Folder</label>
-            <select id="folder" name="folder">
-              <option value="null">...</option>
+            <select id="folder" name="folder" required>
+              <option value="">...</option>
               {dropdown}
             </select>
           </div>
